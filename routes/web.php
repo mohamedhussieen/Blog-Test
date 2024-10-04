@@ -18,4 +18,14 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/test',[TestController::class,'test']);
+Route::get('/about', function () {
+    return view('about');
+});
+
+// Route::get('/test',[TestController::class,'test']);
+Route::get('/home', function () {
+    return view('home');
+});
+Route::get('/contact', function () {
+    return view('contact');
+});
